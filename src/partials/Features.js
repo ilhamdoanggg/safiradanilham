@@ -1,5 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
-import Transition from "../utils/Transition.js";
+import React from "react";
+// import React, { useState, useRef, useEffect } from "react";
+// import Transition from "../utils/Transition.js";
 
 function Features() {
   // const [tab, setTab] = useState(1);
@@ -35,8 +36,6 @@ function Features() {
             </p>
             {/* <p className="text-xl text-gray-600">"...Yaa Tuhan kami, anugerahkah kepada kami pasangan kami dan keturunan kami sebagai penyenang hati (kami), dan jadikanlah kami pemimpin bagi orang orang yang bertakwa." (QS. Al Furqon : 74)</p> */}
           </div>
-
-          {/* Section content */}
 
           {/* <div className="relative min-h-screen bg-gray-100 container bg-gray-100 mx-auto w-full h-full"> */}
             <div className="relative wrap overflow-hidden p-10 h-full">
@@ -135,10 +134,26 @@ function Features() {
                 </div>
               </div>
 
-            {/* </div> */}
+              <div className="mb-8 flex justify-between items-center w-full right-timeline">
+                <div className="order-1 w-5/12"></div>
+                <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+                  <h1 className="mx-auto font-semibold text-lg text-white">
+                    5
+                  </h1>
+                </div>
+                <div className="order-1 bg-seagreen-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                  <p className="mb-3 font-bold text-gray-800 text-md">
+                  15 November 2020
+                  </p>
+                  <p className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
+                    kamu bilang mau serius sama aku
+                  </p>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
-      </div>
     </section>
   );
 }
