@@ -27,7 +27,7 @@ function HeroHome() {
         timeLeft={
             Tahun: years,
             Bulan: months,
-            Minggu: Math.floor(duration/(1000 * 60 * 60 * 24 * 7)),
+//            Minggu: Math.floor(duration/(1000 * 60 * 60 * 24 * 7)),
             Hari: days,
             Jam: hours,
             Menit: mins,
@@ -65,7 +65,7 @@ function HeroHome() {
           <defs>
             <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="illustration-01">
               <stop stopColor="#9ee4a2" offset="0%" />
-              <stop stopColor="#188657" offset="77.402%" />
+              <stop stopColor="#168657" offset="77.402%" />
               <stop stopColor="#193b2e" offset="100%" />
             </linearGradient>
           </defs>
@@ -83,8 +83,8 @@ function HeroHome() {
 
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">
-          <h3 className="text-2xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Save The Date </h3>
-            <h2 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">
+          <h1 className="text-4xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Save The Date </h1>
+            <h2 className="text-3xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-seagreen-500 to-blue-400">
               { timerComponents.length ? timerComponents :` Alhamdulillah Akad nikah sudah diadakan tanggal ${date}`}</span>
               </h2>

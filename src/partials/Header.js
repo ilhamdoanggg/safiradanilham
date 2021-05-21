@@ -35,16 +35,17 @@ function Header() {
               <li>
                 <Link
                   to="/profile/safira"
-                  className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                  className="font-medium text-teal-600 hover:text-greentea-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   Safira
                 </Link>
               </li>
+              &
               <li>
                 <Link
                   to="/profile/ilham"
                   // className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3"
-                  className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex "
+                  className="font-medium text-teal-600 hover:text-greentea-900 px-5 py-3 flex "
                 >
                   Ilham
                   {/* <svg className="w-3 h-3 fill-current text-gray-400 flex-shrink-0 ml-2 -mr-1" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">

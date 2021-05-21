@@ -31,28 +31,30 @@ function Footer() {
           </div> */}
 
           {/* 2nd block */}
-          {/* <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-gray-800 font-medium mb-2">Products</h6>
+          <div className="sm:col-span-7 md:col-span-6">
+            <h6 className="text-gray-800 font-medium mb-2">Donasi dan Angpao</h6>
             <ul className="text-sm">
               <li className="mb-2">
-                <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Web Studio</Link>
+                <p to="#" className="text-chocolate-300 hover:text-gray-900 transition duration-150 ease-in-out"> Bitcoin ke 16i1AiGgjpKsD31MyJg5z6CbR5USo9TRoP</p>
               </li>
               <li className="mb-2">
-                <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">DynamicBox Flex</Link>
+                <p to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">DynamicBox Flex</p>
               </li>
               <li className="mb-2">
-                <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Programming Forms</Link>
+                <p to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Programming Forms</p>
               </li>
               <li className="mb-2">
-                <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Integrations</Link>
+                <p to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Integrations</p>
               </li>
               <li className="mb-2">
-                <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Command-line</Link>
+                <p to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Command-line</p>
               </li>                            
             </ul>
-          </div> */}
+          </div>
 
           {/* 3rd block */}
+          {/* <p className="text-gray-300 text-lg mb-6">BitCoin 16i1AiGgjpKsD31MyJg5z6CbR5USo9TRoP</p> */}
+          {/* <a className="btn text-white bg-blue-600 hover:bg-blue-700 shadow" href="https://paypal.me/ilhamdoanggg?locale.x=id_ID">Paypal</a> */}
           {/* <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
             <h6 className="text-gray-800 font-medium mb-2">Resources</h6>
             <ul className="text-sm">
@@ -130,7 +132,7 @@ function Footer() {
           </ul>
 
           {/* Copyrights note */}
-          <div className="text-sm text-gray-600 mr-4">Made by <a className="text-blue-600 hover:underline" href="https://cruip.com/">Cruip</a>. All rights reserved.</div>
+          <div className="text-sm text-gray-600 mr-4">Build with &hearts; <a className="text-blue-600 hover:underline" href='https://www.linkedin.com/in/ilhamdoanggg/'>ilham</a> and <a className="text-blue-600 hover:underline" href='https://www.linkedin.com/in/safira-andjani-b63b62197/'>safira</a></div>
 
         </div>
 

@@ -5,7 +5,7 @@ function FeaturesBlocks() {
     <section className="relative">
 
       {/* Section background (needs .relative class on parent and next sibling elements) */}
-      <div className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-teal-700 pointer-events-none" aria-hidden="true"></div>
+      <div className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-seagreen-500 pointer-events-none" aria-hidden="true"></div>
       <div className="absolute left-0 right-0 bottom-0 m-auto w-px p-px h-20 bg-gray-200 transform translate-y-1/2"></div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
@@ -14,7 +14,8 @@ function FeaturesBlocks() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4">Pemberitahuan</h2>
-            <p className="text-xl text-gray-600">Tanpa mengurangi rasa hormat para tamu wajib mengikuti protokol kesehatan sebagai berikut</p>
+            <p className="text-md text-gray-600">Tanpa mengurangi rasa hormat bagi tamu yang akan menghadiri pada tanggal 
+            <code> 30 Mei 2020 / 18 Syawal 1442</code> wajib mengikuti protokol kesehatan sebagai berikut</p>
           </div>
 
           {/* Items */}
