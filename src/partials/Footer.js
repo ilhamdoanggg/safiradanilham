@@ -38,10 +38,10 @@ function Footer() {
                 <p to="#" className="text-chocolate-300 hover:text-gray-900 transition duration-150 ease-in-out"> Bitcoin ke 16i1AiGgjpKsD31MyJg5z6CbR5USo9TRoP</p>
               </li>
               <li className="mb-2">
-                <p to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">DynamicBox Flex</p>
+                <p to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">BRI</p>
               </li>
               <li className="mb-2">
-                <p to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Programming Forms</p>
+                <p to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">BCA</p>
               </li>
               <li className="mb-2">
                 <p to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Integrations</p>

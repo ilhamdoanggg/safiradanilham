@@ -5,6 +5,7 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <meta
       name="description"
       content="Web site created using create-react-app"
@@ -33,10 +34,272 @@
 
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Safira & Ilham</title>
+  <style>
+    .splash {
+    position: absolute;
+    background: #ffffff;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1032;
+    animation: splash-bg 7s 1s alternate;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+/* Splash Background Animation */
+
+@-webkit-keyframes splash-bg {
+    from {
+        background: #ffffff;
+    }
+    to {
+        background: #59ca7f
+    }
+}
+
+@-moz-keyframes splash-bg {
+    from {
+        background: #ffffff;
+    }
+    to {
+        background: #59ca7f
+    }
+}
+
+@-o-keyframes splash-bg {
+    from {
+        background: #ffffff
+    }
+    to {
+        background: #59ca7f
+    }
+}
+
+@keyframes splash-bg {
+    from {
+        background: #ffffff;
+    }
+    to {
+        background: #59ca7f
+    }
+}
+
+.splash .heart-loader {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    margin-left: -80px;
+    margin-top: -51px;
+    width: 160px;
+    height: 102px;
+    overflow: visible;
+}
+
+.splash .heart-loader-group {
+    transform-origin: 0 90px;
+}
+
+.splash .heart-left-loader,
+.splash .heart-right-loader {
+    stroke: #b8b8b8;
+    stroke-dasharray: 308.522, 308.522;
+    stroke-dashoffset: 308.522;
+}
+
+.splash .heart-left-loader {
+    animation: splash-left-heart-anim 5s 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    transform: translateX(0);
+}
+
+.splash .heart-right-loader {
+    animation: splash-right-heart-anim 5s 1s alternate;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    transform: translate(62px, 12px);
+}
+
+.splash .heart-both-loader {
+    stroke: #F05157;
+    fill: transparent;
+    stroke-dasharray: 308.522, 308.522;
+    stroke-dashoffset: 308.522;
+    animation: splash-heart-anim 5s 1s alternate;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes splash-left-heart-anim {
+    12% {
+        stroke-dashoffset: 188.522;
+        stroke: #b8b8b8;
+        fill: transparent;
+    }
+    31% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+        stroke: #b8b8b8;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    41% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+        stroke: #b8b8b8;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    43% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+        stroke: #b8b8b8;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+    85% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+        stroke: #b8b8b8;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px);
+        stroke: #FF7E7E;
+        fill: #FF7E7E;
+        opacity: 1;
+    }
+}
+
+@keyframes splash-left-heart-anim {
+    12% {
+        stroke-dashoffset: 188.522;
+        stroke: #b8b8b8;
+        fill: transparent;
+    }
+    31% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+        stroke: #b8b8b8;
+        transform: translateX(0);
+    }
+    41% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+        stroke: #b8b8b8;
+        transform: translateX(0);
+    }
+    43% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+        stroke: #b8b8b8;
+        transform: translateX(0);
+        opacity: 1;
+    }
+    85% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+        stroke: #b8b8b8;
+        transform: translateX(0);
+        opacity: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        transform: translateY(-2px);
+        stroke: #FF7E7E;
+        fill: #FF7E7E;
+        opacity: 1;
+    }
+}
+
+@keyframes splash-right-heart-anim {
+    12% {
+        stroke-dashoffset: 188.522;
+        fill: transparent;
+        stroke: #b8b8b8;
+    }
+    31% {
+        stroke-dashoffset: 0;
+        transform: translate(62px, 12px);
+        fill: transparent;
+        stroke: #b8b8b8;
+    }
+    41% {
+        stroke-dashoffset: 0;
+        transform: translate(62px, 12px);
+        fill: transparent;
+        stroke: #b8b8b8;
+    }
+    43% {
+        stroke-dashoffset: 0;
+        transform: translate(62px, 12px);
+        opacity: 1;
+        fill: transparent;
+        stroke: #b8b8b8;
+    }
+    85% {
+        stroke-dashoffset: 0;
+        transform: translate(62px, 12px);
+        opacity: 0;
+        fill: transparent;
+        stroke: #b8b8b8;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        transform: translate(62px, 10px);
+        stroke: #FF6B6C;
+        fill: #FF6B6C;
+        opacity: 1;
+    }
+}
+
+@keyframes splash-heart-anim {
+    55% {
+        stroke-dashoffset: 308.522;
+        fill: transparent;
+    }
+    70% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+    87% {
+        stroke-dashoffset: 0;
+        fill: #F05157;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: #F05157;
+    }
+}
+  </style>
   </head>
   <body class="font-inter antialiased bg-white text-gray-900 tracking-tight">
     <noscript>You need to enable JavaScript to run this app.</noscript>
-
+    <div class="loader-container">
+      <div id="splash" role="progressbar">
+        <div class="splash">
+            <div class="logo-group">
+                <svg class="heart-loader" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="119.813" height="75.5" viewBox="0 0 119.813 75.5" version="1.1">
+                  <g class="heart-loader-group">
+                    <path class="heart-both-loader" stroke-width="2" fill="none" d="M106.055,58.828 C104.558,60.390 106.853,68.616 109.886,73.658 C102.196,70.462 100.440,69.720 95.958,67.878 C92.728,70.405 89.119,72.951 85.099,75.500 C74.616,68.963 66.876,62.451 61.360,56.221 C71.999,45.765 82.515,30.874 79.354,15.367 C81.390,16.841 83.332,18.762 85.099,21.169 C103.175,-3.823 139.743,23.663 106.055,58.828 ZM25.985,61.223 C21.103,63.223 19.189,64.029 10.813,67.500 C14.117,62.025 16.616,53.091 14.986,51.395 C-21.710,13.208 18.123,-16.640 37.813,10.500 C60.893,-20.844 111.387,23.762 37.813,69.500 C33.434,66.731 29.502,63.967 25.985,61.223 Z" />
+                    <path class="heart-left-loader" stroke-width="1" fill="none" d="M37.813,10.500 C18.123,-16.640 -21.710,13.208 14.986,51.395 C16.616,53.091 14.117,62.025 10.813,67.500 C19.189,64.029 21.103,63.223 25.985,61.223 C29.502,63.967 33.434,66.731 37.813,69.500 C111.387,23.762 60.893,-20.844 37.813,10.500"/>
+                    <path class="heart-right-loader" stroke-width="1" fill="none" d="M23.724,9.669 C41.800,-15.323 78.368,12.163 44.680,47.328 C43.183,48.890 45.478,57.116 48.511,62.158 C40.821,58.962 39.065,58.220 34.583,56.378 C31.353,58.905 27.744,61.451 23.724,64.000 C13.241,57.463 5.501,50.951 -0.015,44.721 C10.624,34.265 21.140,19.374 17.979,3.867 C20.015,5.341 21.957,7.262 23.724,9.669 Z"/>
+                  </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+    </div>
     <div id="root"></div>
   </body>
 </html>

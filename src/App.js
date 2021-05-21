@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
-import { Switch, Route, useLocation } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Switch, Route} from "react-router-dom";
 
 import "./css/style.scss";
 
-import AOS from "aos";
-import { focusHandling } from "cruip-js-toolkit";
+// import AOS from "aos";
+// import { focusHandling } from "cruip-js-toolkit";
 
 import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
@@ -12,23 +12,32 @@ import SignUp from "./pages/SignUp";
 // import ResetPassword from './pages/ResetPassword';
 
 function App() {
-  const location = useLocation();
+  const [loading, setLoading] = useState(true);
 
+  function fakeRequest() {
+    return new Promise((resolve) => setTimeout(() => resolve(), 6000));
+  }
+  
   useEffect(() => {
-    AOS.init({
-      once: true,
-      disable: "phone",
-      duration: 700,
-      easing: "ease-out-cubic",
+    fakeRequest().then(() => {
+      const el = document.querySelector(".loader-container");
+      if (el) {
+        el.remove();
+        setLoading(!loading);
+      }
     });
-  });
+  },[loading]);
 
-  useEffect(() => {
-    document.querySelector("html").style.scrollBehavior = "auto";
-    window.scroll({ top: 0 });
-    document.querySelector("html").style.scrollBehavior = "";
-    focusHandling("outline");
-  }, [location.pathname]); // triggered on route change
+  if (loading) {
+    return null
+  }
+  // const location = useLocation();
+  // useEffect(() => {
+  //   document.querySelector("html").style.scrollBehavior = "auto";
+  //   window.scroll({ top: 0 });
+  //   document.querySelector("html").style.scrollBehavior = "";
+  //   focusHandling("outline");
+  // }, [location.pathname]); // triggered on route change
 
   return (
     <>

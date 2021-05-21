@@ -40,9 +40,9 @@ function Newsletter() {
 
               {/* CTA content */}
               <div className="text-center lg:text-left lg:max-w-xl">
-                <h3 className="h3 text-white mb-2">Terima Kasih atas doa dan restunya </h3>
                 <p className="text-gray-300 text-lg mb-6">"...Yaa Tuhan kami, anugerahkah kepada kami pasangan kami dan keturunan kami sebagai penyenang hati (kami), dan jadikanlah kami pemimpin bagi orang orang yang bertakwa." <strong>QS. Al Furqon : 74</strong> </p>
                 <p className="text-gray-300 text-lg mb-6">"Semoga Allah senantiasa memberkahi untuk kami dalam keadaan mudah dan memberkahi pula atas kami dalam keadaan sulit, serta menghimpun kami berdua untuk senantiasa dalam kebaikan" </p>
+                <h3 className="h3 text-white mb-2">Terima Kasih atas doa dan restunya </h3>
 
                 {/* CTA form */}
                 <form className="w-full lg:w-auto">
