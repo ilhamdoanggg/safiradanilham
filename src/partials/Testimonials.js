@@ -10,8 +10,8 @@ function Testimonials() {
           <defs>
             <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="illustration-02">
               <stop stopColor="#FFF" offset="0%" />
-              <stop stopColor="#EAEAEA" offset="77.402%" />
-              <stop stopColor="#DFDFDF" offset="100%" />
+              <stop stopColor="#18681a" offset="77.402%" />
+              <stop stopColor="#0e3e10" offset="100%" />
             </linearGradient>
           </defs>
           <g transform="translate(0 -3)" fill="url(#illustration-02)" fillRule="evenodd">
@@ -26,9 +26,8 @@ function Testimonials() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h2 className="h2 mb-4">Trusted by over 20,000 companies all over the world</h2>
-            <p className="text-xl text-gray-600" data-aos="zoom-y-out">Arcu cursus vitae congue mauris rhoncus viverra nibh cras pulvinar mattis
-                blandit libero cursus mattis.</p>
+            <h2 className="h2 mb-4">Bagi yang berhalangan hadir</h2>
+            <p className="text-xl text-gray-600" data-aos="fade-up">bagi yg berhalangan hadir dan ingin membagi rizky untuk pengantin bisa dengan mentransfer ke</p>
           </div>
 
           {/* Items */}
@@ -72,10 +71,9 @@ function Testimonials() {
           </div>
 
           {/* Testimonials */}
-          <div className="max-w-3xl mx-auto mt-20" data-aos="zoom-y-out">
+          {/* <div className="max-w-3xl mx-auto mt-20" data-aos="zoom-y-out">
             <div className="relative flex items-start border-2 border-gray-200 rounded bg-white">
 
-              {/* Testimonial */}
               <div className="text-center px-12 py-8 pt-20 mx-4 md:mx-0">
                 <div className="absolute top-0 -mt-8 left-1/2 transform -translate-x-1/2">
                   <svg className="absolute top-0 right-0 -mt-3 -mr-8 w-16 h-16 fill-current text-blue-500" viewBox="0 0 64 64" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -93,7 +91,7 @@ function Testimonials() {
               </div>
 
             </div>
-          </div>
+          </div> */}
 
         </div>
       </div>

@@ -1,46 +1,39 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
+import ReactGA from 'react-ga'
 import { Switch, Route} from "react-router-dom";
-
-import "./css/style.scss";
-
-// import AOS from "aos";
-// import { focusHandling } from "cruip-js-toolkit";
-
+import AOS from "aos";
+import { focusHandling } from "cruip-js-toolkit";
+import {useLocation} from 'react-router-dom'
 import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 // import ResetPassword from './pages/ResetPassword';
-
+import './css/style.scss'
 function App() {
-  const [loading, setLoading] = useState(true);
-
-  function fakeRequest() {
-    return new Promise((resolve) => setTimeout(() => resolve(), 6000));
-  }
-  
+  console.log(process.env.REACT_APP_GA);
   useEffect(() => {
-    fakeRequest().then(() => {
-      const el = document.querySelector(".loader-container");
-      if (el) {
-        el.remove();
-        setLoading(!loading);
-      }
+    ReactGA.initialize(process.env.REACT_APP_GA)
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
+    AOS.init({
+      once: false,
+      offset: 200,
+      delay:100,
+      debounceDelay: 50, 
+      duration: 700,
+      mirror: true,
+      easing: 'ease-in-out-cubic'
     });
-  },[loading]);
-
-  if (loading) {
-    return null
-  }
-  // const location = useLocation();
-  // useEffect(() => {
-  //   document.querySelector("html").style.scrollBehavior = "auto";
-  //   window.scroll({ top: 0 });
-  //   document.querySelector("html").style.scrollBehavior = "";
-  //   focusHandling("outline");
-  // }, [location.pathname]); // triggered on route change
-
+  });
+  const location = useLocation();
+  useEffect(() => {
+    document.querySelector("html").style.scrollBehavior = "auto";
+    window.scroll({ top: 0 });
+    document.querySelector("html").style.scrollBehavior = "";
+    focusHandling("outline");
+  }, [location.pathname]); 
+  
   return (
-    <>
       <Switch>
         <Route exact path="/">
           <Home />
@@ -55,7 +48,6 @@ function App() {
           <ResetPassword />
         </Route> */}
       </Switch>
-    </>
   );
 }
 

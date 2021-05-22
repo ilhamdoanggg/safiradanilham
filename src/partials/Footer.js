@@ -7,7 +7,7 @@ function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
         {/* Top area: Blocks */}
-        <div className="grid sm:grid-cols-12 gap-8 py-8 md:py-12 border-t border-gray-200">
+        {/* <div className="grid sm:grid-cols-12 gap-8 py-8 md:py-12 border-t border-gray-200"> */}
 
           {/* 1st block */}
           {/* <div className="sm:col-span-12 lg:col-span-3">
@@ -31,7 +31,7 @@ function Footer() {
           </div> */}
 
           {/* 2nd block */}
-          <div className="sm:col-span-7 md:col-span-6">
+          {/* <div className="sm:col-span-7 md:col-span-6">
             <h6 className="text-gray-800 font-medium mb-2">Donasi dan Angpao</h6>
             <ul className="text-sm">
               <li className="mb-2">
@@ -50,7 +50,7 @@ function Footer() {
                 <p to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Command-line</p>
               </li>                            
             </ul>
-          </div>
+          </div> */}
 
           {/* 3rd block */}
           {/* <p className="text-gray-300 text-lg mb-6">BitCoin 16i1AiGgjpKsD31MyJg5z6CbR5USo9TRoP</p> */}
@@ -101,7 +101,7 @@ function Footer() {
           {/* 5th block */}
                    
 
-        </div>
+        {/* </div> */}
 
         {/* Bottom area */}
         <div className="md:flex md:items-center md:justify-between py-4 md:py-8 border-t border-gray-200">
