@@ -6,13 +6,12 @@ function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
 
   const [date] = useState('May 30, 2021')
+  const [dateResepsi] = useState('July 23, 2021')
 
-  const calculateTimeLeft = () => {
-      var nowMillis = new Date(date).getTime();
+  const calculateTimeLeft = (time) => {
+      var nowMillis = new Date(time).getTime();
       var targetMillis = new Date().getTime();
-      console.log(nowMillis,targetMillis);
       var duration = nowMillis-targetMillis;
-    
       var years = Math.floor(duration / 3.154e+10);
       var durationMinusYears = duration - (years * 3.154e+10);
       var months = Math.floor(duration / 2.628e+9) % 12;
@@ -26,7 +25,7 @@ function HeroHome() {
       if (duration >0){
         timeLeft={
             Tahun: years,
-            Bulan: months,
+            // Bulan: months,
 //            Minggu: Math.floor(duration/(1000 * 60 * 60 * 24 * 7)),
             Hari: days,
             Jam: hours,
@@ -38,14 +37,18 @@ function HeroHome() {
     }
   
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [timeLeftResepsi, setTimeLeftRsepsi] = useState(calculateTimeLeft());
   
   useEffect(() => {
     setTimeout(() => {
-      setTimeLeft(calculateTimeLeft());
+      setTimeLeft(calculateTimeLeft(date));
+      setTimeLeftRsepsi(calculateTimeLeft(dateResepsi));
     }, 1000);
   });
+
   const timerComponents = [];
-    Object.keys(timeLeft).forEach((interval) => {
+  const timerComponentsResepsi = [];
+  Object.keys(timeLeft).forEach((interval) => {
         if (!timeLeft[interval]) {
           return;
         }
@@ -55,6 +58,17 @@ function HeroHome() {
             </span>
           );
   });
+
+  Object.keys(timeLeftResepsi).forEach((interval) => {
+    if (!timeLeftResepsi[interval]) {
+      return;
+    }
+    timerComponentsResepsi.push(
+        <span>
+          {timeLeftResepsi[interval]} {interval}{" "}
+        </span>
+      );
+});
   
   return (
     <section className="relative">
@@ -82,24 +96,30 @@ function HeroHome() {
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
 
           {/* Section header */}
+          <div className="max-w-3xl mx-auto text-center">
+          <p className="text-5xl md:text-6xl font-dancing leading-tighter tracking-tighter mb-4" data-aos="fade-up">Save The Date</p>
+          <p className="text-4xl md:text-xl font-dancing leading-tighter tracking-tighter mb-4" data-aos="fade-up">Resepsi & Akad</p>
+          </div>
           <div className="text-center pb-12 md:pb-16">
-          <h1 className="text-4xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="fade-up">Save The Date </h1>
-            <h2 className="text-3xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="fade-up">
-              <span className="bg-clip-text text-seagreen-400 bg-gradient-to-r from-seagreen-500 to-blue-400">
-              { timerComponents.length ? timerComponents :` Alhamdulillah Akad nikah sudah diadakan tanggal ${date}`}</span>
+          <h1 className="text-4xl md:text-6xl font-dancing leading-tighter tracking-tighter mb-4" data-aos="fade-up">Akad</h1>
+              <h2 className=" md:text-6xl font-semibold leading-tighter tracking-tighter mb-4" data-aos="fade-up">
+                <span className="bg-clip-text text-seagreen-400 bg-gradient-to-r from-seagreen-500 to-blue-400">
+                { timerComponents.length ? timerComponents :` Alhamdulillah Akad nikah sudah dilakukan tanggal ${date}`}</span>
               </h2>
-            <div className="max-w-3xl mx-auto">
-              {/* <p className="text-xl text-gray-600 mb-8" data-aos="fade-up" data-aos-delay="150">
-              Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir <strong>(QS. Ar-Rum Ayat 21)</strong></p> */}
-              <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="fade-up" data-aos-delay="200">
-                {/* <div>
-                  <a className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Start free trial</a>
-                </div>
-                <div>
-                  <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#0">Learn more</a>
-                </div> */}
-              </div>
-            </div>
+
+            <h1 className="text-4xl md:text-6xl font-dancing leading-tighter tracking-tighter mb-4" data-aos="fade-up">Resepsi</h1>
+            <h2 className="md:text-6xl font-semibold leading-tighter tracking-tighter mb-4" data-aos="fade-up">
+                <span className="bg-clip-text text-seagreen-400 bg-gradient-to-r from-seagreen-500 to-blue-400">
+                { timerComponentsResepsi.length ? timerComponentsResepsi :` Alhamdulillah Resepsi nikah sudah dilakukan pada tanggal ${dateResepsi}`}</span>
+              </h2>
+            
+            {/* <div className="max-w-3xl mx-auto">
+              <p className="text-xl text-gray-600 mb-8" data-aos="fade-up" data-aos-delay="150">
+              Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, 
+              agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, 
+              pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir <strong className='font-dancing'>(QS. Ar-Rum Ayat 21)</strong></p> 
+              
+            </div> */}
           </div>
 
           {/* Hero image */}

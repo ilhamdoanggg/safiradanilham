@@ -172,6 +172,12 @@ module.exports = {
           8:'#000000',
           9:'#60AC12'
         },
+        bank:{
+          bri:'#00529C',
+          bca:'#08559E',
+          bca2:'#195BCA',
+          bitcoin:'',
+        },
       },
       boxShadow: {
         xs: '0 0 0 1px rgba(0, 0, 0, 0.16)',
@@ -191,7 +197,8 @@ module.exports = {
         '1/1': '100%',
       },
       fontFamily: {
-        inter: ['Inter', 'sans-serif']
+        inter: ['Inter', 'sans-serif'],
+        dancing:['Dancing Script', 'dacing-script']
       },
       fontSize: {
         xs: '0.75rem',

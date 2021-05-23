@@ -24,7 +24,7 @@ function Header() {
           {/* Site branding */}
           <div className="flex-shrink-0 mr-4">
             {/* Logo */}
-            <Link to="/" className="block" aria-label="undangan">
+            <Link to="/" className="font-dancing block" aria-label="undangan">
               Undangan Pernikahan
             </Link>
           </div>

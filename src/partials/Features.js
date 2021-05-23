@@ -30,7 +30,7 @@ function Features() {
         <div className="pt-12 md:pt-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4"data-aos="fade-up">Kisah Cinta Kita</h1>
+            <h1 className="font-dancing h2 mb-4"data-aos="fade-up">Kisah Cinta Kita</h1>
             <p className="text-xl text-gray-600" data-aos="fade-up">
               Cinta Itu Rumit, Maka Belajarlah untuk Menyederhanakannya
             </p>

@@ -13,35 +13,35 @@ function FeaturesBlocks() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">Pemberitahuan</h2>
-            <p className="text-md text-gray-600">Tanpa mengurangi rasa hormat bagi tamu yang akan menghadiri akad nikah pada tanggal 
+            <h2 className="font-dancing h2 mb-4" data-aos="fade-up">Pemberitahuan</h2>
+            <p className="text-md text-gray-600" data-aos="fade-up">Tanpa mengurangi rasa hormat bagi tamu yang akan menghadiri akad nikah pada tanggal 
             <code> 30 Mei 2020 / 18 Syawal 1442</code> wajib mengikuti protokol kesehatan sebagai berikut</p>
           </div>
 
           {/* Items */}
           <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
             
-            <div className=" flex flex-col items-center p-3 bg-white rounded shadow-xl">
+            <div className=" flex flex-col items-center p-3 bg-white rounded shadow-xl" data-aos="fade-up">
             <img className="object-contain h-48 w-full" src={require('../images/masker.png').default} rx="32" alt="Hero" />
             </div>
 
-            <div className=" flex flex-col items-center p-3 bg-white rounded shadow-xl">
+            <div className=" flex flex-col items-center p-3 bg-white rounded shadow-xl" data-aos="fade-up">
             <img className="object-contain h-48 w-full" src={require('../images/2meter.png').default} width="64" height="64" rx="32" alt="Hero" />
             </div>
             
-            <div className=" flex flex-col items-center p-3 bg-white rounded shadow-xl">
+            <div className=" flex flex-col items-center p-3 bg-white rounded shadow-xl" data-aos="fade-up">
             <img className="object-contain h-48 w-full" src={require('../images/cuci-tangan.png').default} rx="32" alt="Hero" />  
             </div>
 
-            <div className=" flex flex-col items-center p-3 bg-white rounded shadow-xl">
+            <div className=" flex flex-col items-center p-3 bg-white rounded shadow-xl" data-aos="fade-up">
             <img className="object-contain h-48 w-full" src={require('../images/jabat.png').default} rx="32" alt="Hero" />
             </div>
 
-            <div className=" flex flex-col items-center p-3 bg-white rounded shadow-xl">
+            <div className=" flex flex-col items-center p-3 bg-white rounded shadow-xl" data-aos="fade-up">
             <img className="object-contain h-48 w-full" src={require('../images/gunakan.png').default} rx="32" alt="Hero" />
             </div>
 
-            <div className=" flex flex-col items-center p-3 bg-white rounded shadow-xl">
+            <div className=" flex flex-col items-center p-3 bg-white rounded shadow-xl" data-aos="fade-up">
             <img className="object-contain h-48 w-full" src={require('../images/kerumunan.png').default} rx="32" alt="Hero" />
             </div>
 

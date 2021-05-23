@@ -36,13 +36,13 @@ function Newsletter() {
               </svg>
             </div>
 
-            <div className="relative flex flex-col lg:flex-row justify-between items-center" data-aos="fade-up" data-aos-delay="150">
 
+            <div className="relative flex flex-col lg:flex-row justify-between items-center" data-aos="fade-up" data-aos-delay="150">
               {/* CTA content */}
               <div className="text-center lg:text-left lg:max-w-xl">
-                <p className="text-gray-300 text-lg mb-6" data-aos="fade-up" data-aos-delay="300">"...Yaa Tuhan kami, anugerahkah kepada kami pasangan kami dan keturunan kami sebagai penyenang hati (kami), dan jadikanlah kami pemimpin bagi orang orang yang bertakwa." <strong>QS. Al Furqon : 74</strong> </p>
+                <p className="text-gray-300 text-lg mb-6" data-aos="fade-up" data-aos-delay="300">"...Yaa Tuhan kami, anugerahkah kepada kami pasangan kami dan keturunan kami sebagai penyenang hati (kami), dan jadikanlah kami pemimpin bagi orang orang yang bertakwa." <strong className='font-dancing'>QS. Al Furqon : 74</strong> </p>
                 <p className="text-gray-300 text-lg mb-6"data-aos="fade-up" data-aos-delay="400">"Semoga Allah senantiasa memberkahi untuk kami dalam keadaan mudah dan memberkahi pula atas kami dalam keadaan sulit, serta menghimpun kami berdua untuk senantiasa dalam kebaikan" </p>
-                <h3 className="h3 text-white mb-2" data-aos="fade-up" data-aos-delay="600">Terima Kasih atas doa dan restunya </h3>
+                <h3 className="h3 font-dancing text-white mb-2" data-aos="fade-up" data-aos-delay="600">Terima Kasih atas doa dan restunya </h3>
               </div>
             </div>
 
