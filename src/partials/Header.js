@@ -30,7 +30,7 @@ function Header() {
           </div>
 
           {/* Site navigation */}
-          <nav className="flex flex-grow">
+          <nav className="flex flex-grow font-dancing">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
                 <Link
