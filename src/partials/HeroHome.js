@@ -5,12 +5,13 @@ function HeroHome() {
 
   const [videoModalOpen, setVideoModalOpen] = useState(false);
 
-  const [date] = useState('May 30, 2021')
-  const [dateResepsi] = useState('July 23, 2021')
+  const [date] = useState(new Date('2021-05-30'))
+  const [dateResepsi] = useState(new Date('2021-07-23'))
 
   const calculateTimeLeft = (time) => {
-      var nowMillis = new Date(time).getTime();
-      var targetMillis = new Date().getTime();
+      var nowMillis = new Date(time);
+      var targetMillis = new Date();
+      console.log({targetMillis,nowMillis});
       var duration = nowMillis-targetMillis;
       var years = Math.floor(duration / 3.154e+10);
       var durationMinusYears = duration - (years * 3.154e+10);
@@ -25,9 +26,9 @@ function HeroHome() {
       if (duration >0){
         timeLeft={
             Tahun: years,
-            // Bulan: months,
+            Bulan: months,
 //            Minggu: Math.floor(duration/(1000 * 60 * 60 * 24 * 7)),
-            Hari: days,
+            'Hari': days,
             Jam: hours,
             Menit: mins,
             Detik:secs
@@ -43,7 +44,7 @@ function HeroHome() {
     setTimeout(() => {
       setTimeLeft(calculateTimeLeft(date));
       setTimeLeftRsepsi(calculateTimeLeft(dateResepsi));
-    }, 1000);
+    }, 100);
   });
 
   const timerComponents = [];
@@ -98,16 +99,16 @@ function HeroHome() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center">
           {/* <p className="text-5xl md:text-6xl font-dancing leading-tighter tracking-tighter mb-4" data-aos="fade-up">Save The Date</p> */}
-          <h1 className="text-5xl md:text-xl font-dancing leading-tighter tracking-tighter mb-4" data-aos="fade-up">Akad & Resepsi Pernikahan</h1>
+          <h1 className="text-5xl md:text-6xl font-dancing leading-tighter tracking-tighter mb-4" data-aos="fade-up">Akad Nikah & Resepsi Pernikahan</h1>
           </div>
           <div className="text-center pb-12 md:pb-16">
-          <h1 className="text-4xl md:text-6xl font-dancing leading-tighter tracking-tighter mb-4" data-aos="fade-up">Akad</h1>
+          <h1 className="text-4xl md:text-6xl font-dancing leading-tighter tracking-tighter mb-4" data-aos="fade-up">Akad Nikah</h1>
               <h2 className=" md:text-6xl font-semibold leading-tighter tracking-tighter mb-4" data-aos="fade-up">
                 <span className="bg-clip-text text-seagreen-400 bg-gradient-to-r from-seagreen-500 to-blue-400">
                 { timerComponents.length ? timerComponents :` Alhamdulillah Akad nikah sudah dilakukan tanggal ${date}`}</span>
               </h2>
 
-            <h1 className="text-4xl md:text-6xl font-dancing leading-tighter tracking-tighter mb-4" data-aos="fade-up">Resepsi</h1>
+            <h1 className="text-4xl md:text-6xl font-dancing leading-tighter tracking-tighter mb-4" data-aos="fade-up">Resepsi Pernikahan</h1>
             <h2 className="md:text-6xl font-semibold leading-tighter tracking-tighter mb-4" data-aos="fade-up">
                 <span className="bg-clip-text text-seagreen-400 bg-gradient-to-r from-seagreen-500 to-blue-400">
                 { timerComponentsResepsi.length ? timerComponentsResepsi :` Alhamdulillah Resepsi nikah sudah dilakukan pada tanggal ${dateResepsi}`}</span>

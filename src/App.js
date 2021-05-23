@@ -10,9 +10,16 @@ import SignUp from "./pages/SignUp";
 // import ResetPassword from './pages/ResetPassword';
 import './css/style.scss'
 function App() {
-  console.log(process.env.REACT_APP_GA);
+  // console.log(process.env.REACT_APP_GA);
   useEffect(() => {
-    ReactGA.initialize(process.env.REACT_APP_GA)
+    ReactGA.initialize(process.env.REACT_APP_GA,
+      {
+        debug: false,
+        titleCase: false,
+        gaOptions: {
+          userId: 123
+        }
+        })
     ReactGA.pageview(window.location.pathname + window.location.search);
 
     AOS.init({

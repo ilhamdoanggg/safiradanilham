@@ -37,7 +37,7 @@ function AfterHome() {
               
             </div>
           </div>
-          <div class="flex flex-col lg:flex-row items-start items-center lg:justify-center w-full w-full lg:px-10 py-12 ">
+          <div className="flex flex-col lg:flex-row items-start items-center lg:justify-center w-full w-full lg:px-10 py-12 ">
             {/* <div className="flex flex-col lg:flex-row items-start lg:justify-center w-full lg:px-10 py-12 "> */}
               <article className="bg-white w-4/5 lg:w-custom mb-10 lg:px-4 px-6 py-10 text-center text-primary-dark rounded-lg" data-aos="fade-up" data-aos-delay="150">
                   <h5 className="font-bold text-base">Calon mempelai Wanita</h5>
