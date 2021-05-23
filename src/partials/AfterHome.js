@@ -32,13 +32,6 @@ function AfterHome() {
           <div className=" text-center md:pb-16">
             <h1 className="h2 mb-4 font-dancing"data-aos="fade-up">Akan Menikah</h1>
             <div className="max-w-3xl mx-auto">
-            <div className="max-w-3xl mx-auto">
-              <p className="text-xl text-gray-600 mb-8" data-aos="fade-up" data-aos-delay="150">
-              Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, 
-              agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, 
-              pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir <strong className='font-dancing'>(QS. Ar-Rum Ayat 21)</strong></p> 
-              
-            </div>
               <p className="text-xl text-gray-600 mb-8" data-aos="fade-up" data-aos-delay="150">
               Semoga Allah SWT senantiasa memberkahi untuk kami dalam keadaan mudah dan memberkahi pula atas kami dalam keadaan sulit, serta menghimpun kami berdua untuk senantiasa dalam kebaikan.</p>
               
@@ -69,8 +62,8 @@ function AfterHome() {
                       <li className="pt-4 pb-4 border-b border-gray-300">Ibu Mafadah</li>
                   </ul>
                 </article>
-          </div>
-          
+                
+          </div>      
           </div>
         </div>
     </section>

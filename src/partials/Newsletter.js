@@ -6,6 +6,14 @@ function Newsletter() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pb-12 md:pb-20">
 
+        <div className="text-center max-w-3xl mx-auto">
+              <p className="text-xl text-gray-600 mb-8" data-aos="fade-up" >
+              Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, 
+              agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, 
+              pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir <strong className='font-dancing'>(QS. Ar-Rum Ayat 21)</strong></p> 
+              
+            </div>
+
           {/* CTA box */}
           <div className="bg-seagreen-500 rounded py-10 px-8 md:py-16 md:px-12 shadow-2xl" data-aos="fade-up">
 
@@ -36,13 +44,12 @@ function Newsletter() {
               </svg>
             </div>
 
-
-            <div className="relative flex flex-col lg:flex-row justify-between items-center" data-aos="fade-up" data-aos-delay="150">
+            <div className="relative flex flex-col lg:flex-row justify-between items-center" data-aos="fade-up" >
               {/* CTA content */}
               <div className="text-center lg:text-left lg:max-w-xl">
-                <p className="text-gray-300 text-lg mb-6" data-aos="fade-up" data-aos-delay="300">"...Yaa Tuhan kami, anugerahkah kepada kami pasangan kami dan keturunan kami sebagai penyenang hati (kami), dan jadikanlah kami pemimpin bagi orang orang yang bertakwa." <strong className='font-dancing'>QS. Al Furqon : 74</strong> </p>
-                <p className="text-gray-300 text-lg mb-6"data-aos="fade-up" data-aos-delay="400">"Semoga Allah senantiasa memberkahi untuk kami dalam keadaan mudah dan memberkahi pula atas kami dalam keadaan sulit, serta menghimpun kami berdua untuk senantiasa dalam kebaikan" </p>
-                <h3 className="h3 font-dancing text-white mb-2" data-aos="fade-up" data-aos-delay="600">Terima Kasih atas doa dan restunya </h3>
+                <p className="text-gray-300 text-lg mb-6" data-aos="fade-up">"...Yaa Tuhan kami, anugerahkah kepada kami pasangan kami dan keturunan kami sebagai penyenang hati (kami), dan jadikanlah kami pemimpin bagi orang orang yang bertakwa." <strong className='font-dancing'>QS. Al Furqon : 74</strong> </p>
+                <p className="text-gray-300 text-lg mb-6"data-aos="fade-up" >"Semoga Allah senantiasa memberkahi untuk kami dalam keadaan mudah dan memberkahi pula atas kami dalam keadaan sulit, serta menghimpun kami berdua untuk senantiasa dalam kebaikan" </p>
+                <h3 className="h3 font-dancing text-white mb-2" data-aos="fade-up">Terima Kasih atas doa dan restunya </h3>
               </div>
             </div>
 

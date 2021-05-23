@@ -97,8 +97,8 @@ function HeroHome() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center">
-          <p className="text-5xl md:text-6xl font-dancing leading-tighter tracking-tighter mb-4" data-aos="fade-up">Save The Date</p>
-          <p className="text-4xl md:text-xl font-dancing leading-tighter tracking-tighter mb-4" data-aos="fade-up">Resepsi & Akad</p>
+          {/* <p className="text-5xl md:text-6xl font-dancing leading-tighter tracking-tighter mb-4" data-aos="fade-up">Save The Date</p> */}
+          <h1 className="text-5xl md:text-xl font-dancing leading-tighter tracking-tighter mb-4" data-aos="fade-up">Akad & Resepsi Pernikahan</h1>
           </div>
           <div className="text-center pb-12 md:pb-16">
           <h1 className="text-4xl md:text-6xl font-dancing leading-tighter tracking-tighter mb-4" data-aos="fade-up">Akad</h1>
