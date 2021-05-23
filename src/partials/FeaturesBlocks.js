@@ -15,7 +15,7 @@ function FeaturesBlocks() {
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="font-dancing h2 mb-4" data-aos="fade-up">Pemberitahuan</h2>
             <p className="text-md text-gray-600" data-aos="fade-up">Tanpa mengurangi rasa hormat bagi tamu yang akan menghadiri akad nikah pada tanggal 
-            <code> 30 Mei 2020 / 18 Syawal 1442</code> wajib mengikuti protokol kesehatan sebagai berikut</p>
+            <code> 30 Mei 2021 / 18 Syawal 1442</code> wajib mengikuti protokol kesehatan sebagai berikut</p>
           </div>
 
           {/* Items */}
