@@ -105,7 +105,7 @@ function HeroHome() {
           <h1 className="text-4xl md:text-6xl font-dancing leading-tighter tracking-tighter mb-4" data-aos="fade-up">Akad Nikah</h1>
               <h2 className=" md:text-6xl font-semibold leading-tighter tracking-tighter mb-4" data-aos="fade-up">
                 <span className="bg-clip-text text-seagreen-400 bg-gradient-to-r from-seagreen-500 to-blue-400">
-                { timerComponents.length ? timerComponents :` Alhamdulillah Akad nikah sudah dilakukan tanggal ${date}`}</span>
+                { timerComponents.length ? timerComponents :` Alhamdulillah Akad nikah sudah dilakukan tanggal 30 Mei 2021`}</span>
               </h2>
 
             <h1 className="text-4xl md:text-6xl font-dancing leading-tighter tracking-tighter mb-4" data-aos="fade-up">Resepsi Pernikahan</h1>
